@@ -4,7 +4,7 @@ namespace ashishittechnosoft\Demo;
 
 class MemoryHandler implements HandlerInterface
 {      
-    protected  $store  = array();
+    protected $store  = array();
 
 
     public function write($timestamp, $message){
