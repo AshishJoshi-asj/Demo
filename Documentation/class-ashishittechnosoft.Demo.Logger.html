@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class ashishittechnosoft\Demo\MemoryHandler</title>
+	<title>Class ashishittechnosoft\Demo\Logger</title>
 
 	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
@@ -40,8 +40,8 @@
 			<h3>Classes</h3>
 			<ul>
 				<li><a href="class-ashishittechnosoft.Demo.Hello.html">Hello</a></li>
-				<li><a href="class-ashishittechnosoft.Demo.Logger.html">Logger</a></li>
-				<li class="active"><a href="class-ashishittechnosoft.Demo.MemoryHandler.html">MemoryHandler</a></li>
+				<li class="active"><a href="class-ashishittechnosoft.Demo.Logger.html">Logger</a></li>
+				<li><a href="class-ashishittechnosoft.Demo.MemoryHandler.html">MemoryHandler</a></li>
 			</ul>
 
 			<h3>Interfaces</h3>
@@ -84,19 +84,10 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class MemoryHandler</h1>
+	<h1>Class Logger</h1>
 
 
 
-	<dl class="tree">
-		<dd style="padding-left:0px">
-<b><span>ashishittechnosoft\Demo\MemoryHandler</span></b>			
-			 implements 
-				<a href="class-ashishittechnosoft.Demo.HandlerInterface.html"><span>ashishittechnosoft\Demo\HandlerInterface</span></a>
-			
-			
-		</dd>
-	</dl>
 
 
 
@@ -111,7 +102,7 @@
 		<b>Namespace:</b> <a href="namespace-ashishittechnosoft.html">ashishittechnosoft</a>\<a href="namespace-ashishittechnosoft.Demo.html">Demo</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-ashishittechnosoft.Demo.MemoryHandler.html#5-18" title="Go to source code">MemoryHandler.php</a>
+			<b>Located at</b> <a href="source-class-ashishittechnosoft.Demo.Logger.html#5-15" title="Go to source code">Logger.php</a>
 		<br>
 	</div>
 
@@ -119,7 +110,7 @@
 
 	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="write" id="_write">
+	<tr data-order="registerHandler" id="_registerHandler">
 
 		<td class="attributes"><code>
 			 public 
@@ -130,8 +121,8 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_write">#</a>
-		<code><a href="source-class-ashishittechnosoft.Demo.MemoryHandler.html#10-12" title="Go to source code">write</a>( <span> <var>$timestamp</var></span>, <span> <var>$message</var></span> )</code>
+		<a class="anchor" href="#_registerHandler">#</a>
+		<code><a href="source-class-ashishittechnosoft.Demo.Logger.html#8-10" title="Go to source code">registerHandler</a>( <span> <var>$name</var></span>, <span> <var>$handler</var></span> )</code>
 
 		<div class="description short">
 			
@@ -146,12 +137,10 @@
 
 
 
-				<h4>Implementation of</h4>
-				<div class="list"><code><a href="class-ashishittechnosoft.Demo.HandlerInterface.html#_write">ashishittechnosoft\Demo\HandlerInterface::write()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getEntries" id="_getEntries">
+	<tr data-order="getHandler" id="_getHandler">
 
 		<td class="attributes"><code>
 			 public 
@@ -162,8 +151,8 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getEntries">#</a>
-		<code><a href="source-class-ashishittechnosoft.Demo.MemoryHandler.html#14-16" title="Go to source code">getEntries</a>( )</code>
+		<a class="anchor" href="#_getHandler">#</a>
+		<code><a href="source-class-ashishittechnosoft.Demo.Logger.html#12-14" title="Go to source code">getHandler</a>( <span> <var>$name</var></span> )</code>
 
 		<div class="description short">
 			
@@ -196,14 +185,14 @@
 
 	<table class="summary properties" id="properties">
 	<caption>Properties summary</caption>
-	<tr data-order="store" id="$store">
+	<tr data-order="handler" id="$handler">
 		<td class="attributes"><code>
 			protected  
-			array
+			
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-ashishittechnosoft.Demo.MemoryHandler.html#7" title="Go to source code"><var>$store</var></a>
+				<a href="source-class-ashishittechnosoft.Demo.Logger.html#6" title="Go to source code"><var>$handler</var></a>
 
 			<div class="description short">
 				
@@ -216,8 +205,8 @@
 		</td>
 		<td class="value">
 			<div>
-				<a href="#$store" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>()</code>
+				<a href="#$handler" class="anchor">#</a>
+				<code></code>
 			</div>
 		</td>
 	</tr>
