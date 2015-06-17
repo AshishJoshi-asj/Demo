@@ -41,7 +41,7 @@ class LoggerTest extends PHPUnit_Framework_TestCase
         $mock->expects($this->exactly(2))
              ->method('write')
              ->with(
-                     $this->isType('integer'),
+                     $this->isType('string'),
                      $this->equalTo('Hello!')
                ); 
              
