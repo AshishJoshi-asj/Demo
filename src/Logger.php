@@ -1,15 +1,24 @@
 <?php 
 
 namespace ashishittechnosoft\Demo;
+use ashishittechnosoft\Demo\HandlerInterface;
 
 class Logger{
-    protected $handler;
+    protected $handlers = array();
     
-    public function registerHandler($name, $handler){
-        $this->handler[$name] = $handler; 
+    public function registerHandler($name, HandlerInterface $handler){
+        $this->handlers[$name] = $handler; 
     }
     
     public function getHandler($name){
-        return $this->handler[$name];
+        return $this->handlers[$name];
+    }
+    
+    public function log($message)
+    {
+        $date = date('r');
+        foreach ($this->handlers as $handler) {
+            $handler->write($date, $message);
+        }
     }
 }
